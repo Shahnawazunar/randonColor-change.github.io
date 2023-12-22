@@ -7,11 +7,8 @@ let randomColor = ()=>{
 
 let clrChanger = ()=>{
     let randonNumber =`rgb(${ randomColor()},${ randomColor()},${ randomColor()})`;
-
     containerBox.style.backgroundColor = randonNumber;
     btnChange.style.color = randonNumber;
-
-
 };
 btnChange.addEventListener("click",clrChanger);
 
